@@ -257,9 +257,8 @@ class Search {
                 ? '<ul class="link-list min-list">'
                 : "<p>No general information matches that search.</p>"
             }
-              ${results
-                .generalInfo(someArray || [])
-                .mapmap(
+              ${results.generalInfo
+                .map(
                   (item) =>
                     `<li><a href="${item.permalink}">${item.title}</a> ${
                       item.postType == "post" ? `by ${item.authorName}` : ""
