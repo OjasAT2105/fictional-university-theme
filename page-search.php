@@ -42,7 +42,7 @@
 
 
       <div class="generic-content">
-        <p><?php the_content(); ?></p>
+         <?php  get_search_form(); ?>
       </div>
     </div>
     <?php }
